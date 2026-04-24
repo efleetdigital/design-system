@@ -1,0 +1,512 @@
+/* ═══════════════════════════════════════════════════════════════
+   eFleet Design System 2.0 — CSS Custom Properties (Tokens)
+   ─────────────────────────────────────────────────────────────
+   Versão:    2.0.0
+   Data:      Abril 2026
+   Autor:     Verônica — Head de Marketing, eFleet
+   ─────────────────────────────────────────────────────────────
+   USO: Importe este arquivo no início do CSS principal do projeto
+   @import url('./efleet-tokens.css');
+   ─────────────────────────────────────────────────────────────
+   Fontes necessárias (adicionar no <head> do HTML):
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ──────────────────────────────────────────────────────────
+     CORES — PRIMÁRIAS
+     Azul profundo: confiança e tecnologia
+     Extraídas dos arquivos SVG originais do logotipo eFleet
+     ────────────────────────────────────────────────────────── */
+  --primary-900: #0D1A33;  /* fundo escuro máximo */
+  --primary-800: #162240;  /* nav / footer */
+  --primary-700: #1A2E55;  /* títulos escuros */
+  --primary-600: #223B6F;  /* azul escuro — logo SVG */
+  --primary-500: #245091;  /* ← AZUL BASE — logo SVG */
+  --primary-400: #3A68A8;  /* hover de links */
+  --primary-300: #6590C3;  /* detalhes, ícones */
+  --primary-200: #A4BDD9;  /* borders suaves */
+  --primary-100: #D9E5F2;  /* backgrounds leves */
+  --primary-50:  #EEF4FA;  /* background de seção */
+
+  /* ──────────────────────────────────────────────────────────
+     CORES — SECUNDÁRIAS
+     Verde vibrante: movimento, vitalidade e ação
+     Extraídas dos arquivos SVG originais do logotipo eFleet
+     ────────────────────────────────────────────────────────── */
+  --secondary-700: #6A8A38;  /* verde muito escuro */
+  --secondary-600: #7A9E44;  /* verde escuro */
+  --secondary-500: #89B056;  /* verde logo escuro — SVG */
+  --secondary-400: #A4C557;  /* ← VERDE BASE — logo SVG */
+  --secondary-300: #BDD47C;  /* verde médio */
+  --secondary-200: #D5E6A8;  /* verde claro */
+  --secondary-100: #EAF2D3;  /* verde muito claro */
+  --secondary-50:  #F5F9EA;  /* verde fundo */
+
+  /* ──────────────────────────────────────────────────────────
+     CORES DE APOIO
+     Energia, vitalidade e calor humano (brand guide eFleet 4.0)
+     ────────────────────────────────────────────────────────── */
+  --turquoise:      #0ABFDE;  /* leveza e fluidez digital */
+  --turquoise-dark: #0891B2;  /* turquesa mais escuro */
+  --turquoise-light:#E0F7FC;  /* fundo turquesa */
+  --terracota:      #D4603A;  /* calor humano */
+  --terracota-light:#FBE8E2;  /* fundo terracota */
+  --orange:         #F97316;  /* energia */
+  --orange-light:   #FFF0E0;  /* fundo laranja */
+  --yellow:         #F5B800;  /* vitalidade */
+  --yellow-light:   #FEF3C7;  /* fundo amarelo */
+
+  /* ──────────────────────────────────────────────────────────
+     NEUTROS
+     ────────────────────────────────────────────────────────── */
+  --dark:      #080F1E;  /* preto eFleet */
+  --gray-900:  #111827;
+  --gray-800:  #1F2A3C;
+  --gray-700:  #374151;
+  --gray-600:  #4B5563;
+  --gray-500:  #6B7280;
+  --gray-400:  #9CA3AF;
+  --gray-300:  #D1D5DB;
+  --gray-200:  #E5E7EB;
+  --gray-100:  #F3F4F6;
+  --gray-50:   #F9FAFB;
+  --white:     #FFFFFF;
+
+  /* ──────────────────────────────────────────────────────────
+     CORES SEMÂNTICAS
+     ────────────────────────────────────────────────────────── */
+  --color-success:       #89B056;
+  --color-success-light: #EAF2D3;
+  --color-warning:       #F5B800;
+  --color-warning-light: #FEF3C7;
+  --color-error:         #EF4444;
+  --color-error-light:   #FEE2E2;
+  --color-info:          #0ABFDE;
+  --color-info-light:    #E0F7FC;
+
+  /* ──────────────────────────────────────────────────────────
+     TIPOGRAFIA
+     Montserrat Bold  → títulos (geométrica, tecnologia, força)
+     Nunito Regular   → corpo   (redonda, acessível, calor humano)
+     ────────────────────────────────────────────────────────── */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Nunito', sans-serif;
+  --font-mono:    'Courier New', Courier, monospace;
+
+  /* Escala de tamanho */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px — padrão body */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px — hero */
+
+  /* Pesos */
+  --font-regular:   400;
+  --font-medium:    500;
+  --font-semibold:  600;
+  --font-bold:      700;
+  --font-extrabold: 800;
+  --font-black:     900;
+
+  /* Line heights */
+  --leading-none:    1;
+  --leading-tight:   1.2;   /* h1, h2 — títulos grandes */
+  --leading-snug:    1.375; /* h3, h4 */
+  --leading-normal:  1.5;   /* body padrão */
+  --leading-relaxed: 1.625; /* body lg, parágrafos */
+  --leading-loose:   2;     /* citações */
+
+  /* Letter spacing */
+  --tracking-tight:   -0.02em; /* títulos grandes */
+  --tracking-normal:   0em;
+  --tracking-wide:     0.04em; /* labels UI */
+  --tracking-widest:   0.1em;  /* badges, tags */
+
+  /* ──────────────────────────────────────────────────────────
+     ESPAÇAMENTO
+     Escala baseada em múltiplos de 4px
+     ────────────────────────────────────────────────────────── */
+  --space-0:  0px;
+  --space-px: 1px;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  28px;
+  --space-8:  32px;
+  --space-9:  36px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+
+  /* Espaçamento de seção */
+  --section-py:    96px;  /* padding vertical de seção — desktop */
+  --section-py-sm: 64px;  /* padding vertical de seção — mobile  */
+
+  /* ──────────────────────────────────────────────────────────
+     BORDER RADIUS
+     Inspirado no Finovate: pill para botões, 24px para cards
+     ────────────────────────────────────────────────────────── */
+  --radius-none: 0px;
+  --radius-sm:   4px;
+  --radius-md:   8px;     /* inputs, selects */
+  --radius-lg:   12px;    /* imagens pequenas, badges */
+  --radius-xl:   16px;    /* imagens médias */
+  --radius-2xl:  24px;    /* cards — padrão */
+  --radius-3xl:  32px;    /* cards grandes */
+  --radius-4xl:  40px;    /* seções arredondadas */
+  --radius-full: 9999px;  /* botões pill, avatares */
+
+  /* ──────────────────────────────────────────────────────────
+     SOMBRAS
+     Tinting com a cor primária azul (#245091) para coerência
+     ────────────────────────────────────────────────────────── */
+  --shadow-none: none;
+  --shadow-xs:   0 1px 2px rgba(36, 80, 145, 0.06);
+  --shadow-sm:   0 2px 8px rgba(36, 80, 145, 0.08),
+                 0 1px 3px rgba(36, 80, 145, 0.05);
+  --shadow-md:   0 4px 20px rgba(36, 80, 145, 0.10),
+                 0 2px 8px rgba(36, 80, 145, 0.06);
+  --shadow-lg:   0 10px 40px rgba(36, 80, 145, 0.13),
+                 0 4px 16px rgba(36, 80, 145, 0.08);
+  --shadow-xl:   0 20px 60px rgba(36, 80, 145, 0.16),
+                 0 8px 24px rgba(36, 80, 145, 0.10);
+  --shadow-2xl:  0 32px 80px rgba(36, 80, 145, 0.20);
+
+  /* Glow effect para hover de botões e CTAs */
+  --shadow-glow-primary:   0 0 28px rgba(36, 80, 145, 0.30);
+  --shadow-glow-secondary: 0 0 28px rgba(164, 197, 87, 0.40);
+  --shadow-glow-turquoise: 0 0 28px rgba(10, 191, 222, 0.35);
+
+  /* Inner shadow para inputs focus */
+  --shadow-ring-primary: 0 0 0 3px rgba(36, 80, 145, 0.12);
+  --shadow-ring-error:   0 0 0 3px rgba(239, 68, 68, 0.12);
+  --shadow-ring-success: 0 0 0 3px rgba(137, 176, 86, 0.15);
+
+  /* ──────────────────────────────────────────────────────────
+     ANIMAÇÕES E TRANSIÇÕES
+     Inspirado em Finovate (300ms base), Bitelo (scroll),
+     AgileTech (WOW.js). Use com moderação.
+     ────────────────────────────────────────────────────────── */
+  --duration-instant: 0ms;
+  --duration-fast:    150ms;  /* micro-interactions: ícones, links */
+  --duration-base:    300ms;  /* padrão: botões, cards, nav */
+  --duration-slow:    500ms;  /* entradas de seção, acordeão */
+  --duration-slower:  750ms;  /* animações complexas */
+
+  --ease-linear:  linear;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);   /* material standard */
+  --ease-in:      cubic-bezier(0.4, 0, 1, 1);      /* saída de tela */
+  --ease-out:     cubic-bezier(0, 0, 0.2, 1);      /* entrada na tela */
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1); /* cards, CTAs */
+
+  /* ──────────────────────────────────────────────────────────
+     LAYOUT E GRID
+     Container max 1280px (Finovate) · Grid 12 colunas
+     ────────────────────────────────────────────────────────── */
+  --container-max:    1280px;
+  --container-px:     24px;   /* padding lateral padrão */
+  --container-px-sm:  16px;   /* padding lateral mobile */
+
+  --nav-height:       72px;
+  --nav-height-sm:    60px;
+
+  --grid-cols:        12;
+  --grid-gap:         24px;
+  --grid-gap-sm:      16px;
+
+  /* Breakpoints (use em media queries) */
+  /* --bp-sm:  768px  — mobile       */
+  /* --bp-md:  1024px — tablet       */
+  /* --bp-lg:  1280px — desktop      */
+  /* --bp-xl:  1536px — wide         */
+
+  /* ──────────────────────────────────────────────────────────
+     Z-INDEX — Camadas de sobreposição
+     ────────────────────────────────────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-dropdown:100;
+  --z-sticky:  200;
+  --z-fixed:   300;
+  --z-modal:   400;
+  --z-toast:   500;
+  --z-tooltip: 600;
+
+}
+
+/* ════════════════════════════════════════════════════════════════
+   UTILITÁRIOS BASE — Reset e fundação
+   ════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-regular);
+  line-height: var(--leading-normal);
+  color: var(--gray-800);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--primary-700);
+}
+
+h1 { font-size: var(--text-6xl); font-weight: var(--font-extrabold); }
+h2 { font-size: var(--text-5xl); }
+h3 { font-size: var(--text-4xl); letter-spacing: var(--tracking-tight); }
+h4 { font-size: var(--text-3xl); letter-spacing: 0; }
+h5 { font-size: var(--text-2xl); letter-spacing: 0; }
+h6 { font-size: var(--text-xl);  letter-spacing: 0; }
+
+p  { line-height: var(--leading-relaxed); }
+a  { color: var(--primary-500); text-decoration: none; transition: color var(--duration-fast) var(--ease-default); }
+a:hover { color: var(--secondary-500); }
+
+img, video { max-width: 100%; display: block; }
+
+/* Container padrão */
+.container {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-px);
+  padding-right: var(--container-px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--container-px-sm);
+    padding-right: var(--container-px-sm);
+  }
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+  h3 { font-size: var(--text-2xl); }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   COMPONENTES BASE — Botões
+   ════════════════════════════════════════════════════════════════ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+  letter-spacing: 0.01em;
+  padding: 12px 24px;
+  border-radius: var(--radius-full); /* pill — Finovate */
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--duration-base) var(--ease-default),
+    color            var(--duration-base) var(--ease-default),
+    border-color     var(--duration-base) var(--ease-default),
+    box-shadow       var(--duration-base) var(--ease-default),
+    transform        var(--duration-fast) var(--ease-out);
+}
+
+.btn:active { transform: scale(0.97); }
+
+/* Variantes */
+.btn-primary {
+  background: var(--primary-500);
+  color: var(--white);
+  border-color: var(--primary-500);
+}
+.btn-primary:hover {
+  background: var(--secondary-400);
+  border-color: var(--secondary-400);
+  color: var(--primary-700);
+  box-shadow: var(--shadow-glow-secondary);
+}
+
+.btn-secondary {
+  background: var(--secondary-400);
+  color: var(--primary-700);
+  border-color: var(--secondary-400);
+}
+.btn-secondary:hover {
+  background: var(--primary-500);
+  border-color: var(--primary-500);
+  color: var(--white);
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-500);
+  border-color: var(--primary-500);
+}
+.btn-outline:hover {
+  background: var(--primary-500);
+  color: var(--white);
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--primary-500);
+  border-color: transparent;
+}
+.btn-ghost:hover { background: var(--primary-50); }
+
+.btn-dark {
+  background: var(--primary-800);
+  color: var(--white);
+  border-color: var(--primary-800);
+}
+.btn-dark:hover { background: var(--primary-600); border-color: var(--primary-600); }
+
+/* Tamanhos */
+.btn-sm { padding: 8px 16px; font-size: var(--text-xs); }
+.btn-lg { padding: 16px 36px; font-size: var(--text-base); }
+.btn-xl { padding: 20px 48px; font-size: var(--text-lg); }
+
+/* ════════════════════════════════════════════════════════════════
+   COMPONENTES BASE — Cards
+   ════════════════════════════════════════════════════════════════ */
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-2xl);  /* 24px — Finovate */
+  padding: var(--space-6);           /* 24px */
+  box-shadow: var(--shadow-md);
+  transition:
+    transform    var(--duration-base) var(--ease-out),
+    box-shadow   var(--duration-base) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   COMPONENTES BASE — Inputs
+   ════════════════════════════════════════════════════════════════ */
+
+.input {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--gray-800);
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius-md);   /* 8px */
+  padding: 12px 16px;
+  width: 100%;
+  outline: none;
+  transition:
+    border-color var(--duration-fast) var(--ease-default),
+    background   var(--duration-fast) var(--ease-default),
+    box-shadow   var(--duration-fast) var(--ease-default);
+}
+
+.input::placeholder { color: var(--gray-400); }
+.input:focus {
+  border-color: var(--primary-500);
+  background: var(--white);
+  box-shadow: var(--shadow-ring-primary);
+}
+.input.error   { border-color: var(--color-error);   }
+.input.success { border-color: var(--color-success);  }
+.input.error:focus   { box-shadow: var(--shadow-ring-error);   }
+.input.success:focus { box-shadow: var(--shadow-ring-success); }
+
+/* ════════════════════════════════════════════════════════════════
+   ANIMAÇÕES KEYFRAMES — Uso com scroll (AOS / custom)
+   ════════════════════════════════════════════════════════════════ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Classes utilitárias de animação */
+.animate-fadeInUp    { animation: fadeInUp    var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInLeft  { animation: fadeInLeft  var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInRight { animation: fadeInRight var(--duration-slow) var(--ease-out) both; }
+.animate-zoomIn      { animation: zoomIn      var(--duration-slow) var(--ease-out) both; }
+
+/* Delays escalonados para grupos */
+.delay-1 { animation-delay: 100ms; }
+.delay-2 { animation-delay: 200ms; }
+.delay-3 { animation-delay: 300ms; }
+.delay-4 { animation-delay: 400ms; }
+.delay-5 { animation-delay: 500ms; }
+
+/* Marquee (logos de parceiros) */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* ════════════════════════════════════════════════════════════════
+   FIM DO ARQUIVO
+   eFleet Design System 2.0 — efleet-tokens.css
+   ════════════════════════════════════════════════════════════════ */
